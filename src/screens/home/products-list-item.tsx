@@ -1,8 +1,8 @@
 import React from 'react';
-import { Image, TouchableOpacity, View } from 'react-native';
+import { TouchableOpacity, View } from 'react-native';
 import { styles } from './home-screen-styles';
 import { Product } from '../../types';
-import { Text } from '../../components';
+import { Text, Image } from '../../components';
 import { Colors } from '../../constants/colors';
 import { formatDate, formatNumber } from '../../helpers';
 
@@ -11,15 +11,17 @@ interface ProductsListItemProps {
   onPress?: (item: Product) => void;
 }
 
+const PLUS = '+';
+const MINUS = '-';
+
 export const ProductsListItem = ({ item, onPress }: ProductsListItemProps) => {
   return (
     <TouchableOpacity
       style={styles.productsListItem}
       onPress={() => onPress?.(item)}>
-      <Image
-        source={{ uri: item.image }}
-        style={styles.productsListItemImage}
-      />
+      <View style={styles.productsListItemImageContainer}>
+        <Image source={item.image} style={styles.productsListItemImage} />
+      </View>
       <View style={styles.productsListItemName}>
         <Text subTitle bold>
           {item.product}
@@ -33,7 +35,7 @@ export const ProductsListItem = ({ item, onPress }: ProductsListItemProps) => {
           color={item.is_redemption ? Colors.error : Colors.success}
           subTitle
           bold>
-          {item.is_redemption ? '-' : '+'}
+          {item.is_redemption ? MINUS : PLUS}
         </Text>
         <Text subTitle bold styles={styles.productsListItemPointLabel}>
           {formatNumber(item.points)}

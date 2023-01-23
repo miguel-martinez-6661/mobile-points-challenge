@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: 'rgba(0,0,0,0.5)',
-    zIndex: 2,
+    zIndex: 3,
   },
   loadingIndicator: {
     justifyContent: 'space-evenly',

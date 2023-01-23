@@ -1,10 +1,10 @@
 import React from 'react';
-import { Image, View } from 'react-native';
+import { View } from 'react-native';
 
 import { styles } from './product-details-screen-styles';
 import { useProductDetails } from './use-product-details';
 
-import { Button, Card, Text } from '../../components';
+import { Button, Card, Image, Text } from '../../components';
 import { strings } from '../../constants/strings';
 import { Colors } from '../../constants/colors';
 import { formatDate, formatNumber } from '../../helpers';
@@ -20,11 +20,13 @@ export const ProductDetailsScreen = () => {
         </Text>
       </View>
       <View style={styles.detailsContainer}>
-        <Card styles={styles.imageContainer} color={Colors.background}>
-          <Image
-            source={{ uri: selectedProduct?.image }}
-            style={styles.detailsImage}
-          />
+        <Card styles={styles.cardContainer} color={Colors.background}>
+          <View style={styles.imageContainer}>
+            <Image
+              source={selectedProduct?.image || ''}
+              style={styles.detailsImage}
+            />
+          </View>
         </Card>
 
         <Text subTitle bold color={Colors.textTertiary} styles={styles.section}>

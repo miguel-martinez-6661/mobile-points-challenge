@@ -1,14 +1,14 @@
 import React from 'react';
-import { FlatList, View } from 'react-native';
-
+import { View } from 'react-native';
 import { styles } from './home-screen-styles';
-import { ProductsListItem } from './products-list-item';
-import { FilterTypes, useHome } from './use-home';
+import { useHome } from './use-home';
 
-import { Button, Card, LoadingIndicator, Text } from '../../components';
-import { Colors } from '../../constants/colors';
+import { LoadingIndicator, Text } from '../../components';
 import { strings } from '../../constants/strings';
 import { formatNumber } from '../../helpers';
+import { ButtonSection } from './button-section';
+import { ProductList } from './product-list';
+import { PointsCard } from './points-card';
 
 const DEFAULT_USER_NAME = 'Ruben Rodriguez';
 const DEFAULT_POINTS_SUFFIX = 'pts';
@@ -32,69 +32,15 @@ export const HomeScreen = () => {
           {strings.Home.greetings}
         </Text>
         <Text subTitle>{DEFAULT_USER_NAME}</Text>
-        <View style={styles.section}>
-          <Text subTitle bold color={Colors.textTertiary}>
-            {strings.Home.yourPoints}
-          </Text>
-
-          <View style={[styles.section, styles.monthsPointsContainer]}>
-            <Card>
-              <Text
-                color={Colors.textSecondary}
-                styles={styles.currentDataMonthLabel}
-                title
-                bold>
-                {currentDataMonth}
-              </Text>
-              <View style={styles.totalPointsContainer}>
-                <Text xLargeText bold color={Colors.textSecondary}>
-                  {`${formatNumber(totalPoints)} ${DEFAULT_POINTS_SUFFIX}`}
-                </Text>
-              </View>
-            </Card>
-          </View>
-        </View>
-        <View style={styles.section}>
-          <Text subTitle bold color={Colors.textTertiary}>
-            {strings.Home.yourPointsFlow}
-          </Text>
-          <View style={styles.section}>
-            <FlatList
-              data={products}
-              renderItem={({ item }) => (
-                <ProductsListItem item={item} onPress={handlePressItem} />
-              )}
-              keyExtractor={item => item.id}
-              showsVerticalScrollIndicator={false}
-              contentContainerStyle={styles.productsListContainer}
-              style={styles.productsList}
-            />
-          </View>
-        </View>
-
-        <View style={styles.buttonContainer}>
-          {showFiltersButtons ? (
-            <Button
-              title={strings.Home.allButton}
-              onPress={() => handleFilterChange(FilterTypes.ALL)}
-            />
-          ) : (
-            <>
-              <Button
-                title={strings.Home.earnedPointsButton}
-                onPress={() => handleFilterChange(FilterTypes.BY_EARNED_POINTS)}
-                flex
-              />
-              <Button
-                title={strings.Home.redeemedPointsButton}
-                onPress={() =>
-                  handleFilterChange(FilterTypes.BY_REDEEMED_POINTS)
-                }
-                flex
-              />
-            </>
-          )}
-        </View>
+        <PointsCard
+          month={currentDataMonth}
+          totalPoints={`${formatNumber(totalPoints)} ${DEFAULT_POINTS_SUFFIX}`}
+        />
+        <ProductList data={products} onItemPress={handlePressItem} />
+        <ButtonSection
+          showFiltersButtons={showFiltersButtons}
+          onFilterChange={handleFilterChange}
+        />
       </View>
     </>
   );

@@ -18,11 +18,15 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   imageContainer: {
+    maxHeight: verticalScale(250),
+  },
+  cardContainer: {
     padding: 0,
     marginBottom: 30,
   },
   detailsImage: {
     height: verticalScale(250),
+    maxHeight: verticalScale(250),
     width: '100%',
     borderRadius: 20,
   },

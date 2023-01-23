@@ -45,8 +45,16 @@ export const styles = StyleSheet.create({
     paddingBottom: '50%',
   },
   productsListItem: {
+    justifyContent: 'center',
     flexDirection: 'row',
     marginVertical: 5,
+    height: 55,
+  },
+  productsListItemImageContainer: {
+    flex: 0.3,
+    maxHeight: 60,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   productsListItemImage: {
     borderRadius: 10,
