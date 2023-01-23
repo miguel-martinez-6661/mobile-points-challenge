@@ -4,7 +4,7 @@ import { RouteNames } from './route-names';
 
 export const strings = {
   [RouteNames.Home]: {
-    greetings: 'Bienvenido de vuelta',
+    greetings: 'Bienvenido de vuelta!',
     yourPoints: 'TUS PUNTOS',
     yourPointsFlow: 'TUS MOVIMIENTOS',
     allButton: 'Todos',
