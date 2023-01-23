@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <Text> component should mount component correctly 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#000000",
+      "fontFamily": "Avenir",
+      "fontSize": 18.857142857142858,
+      "fontWeight": "400",
+    }
+  }
+>
+  Test
+</Text>
+`;
+
+exports[`Testing <Text> component should render with "largeText" props 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#000000",
+      "fontFamily": "Avenir",
+      "fontSize": 37.714285714285715,
+      "fontWeight": "400",
+    }
+  }
+>
+  Test
+</Text>
+`;
+
+exports[`Testing <Text> component should render with "subTitle" props 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#000000",
+      "fontFamily": "Avenir",
+      "fontSize": 22,
+      "fontWeight": "400",
+    }
+  }
+>
+  Test
+</Text>
+`;
+
+exports[`Testing <Text> component should render with "title" props 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#000000",
+      "fontFamily": "Avenir",
+      "fontSize": 28.285714285714285,
+      "fontWeight": "400",
+    }
+  }
+>
+  Test
+</Text>
+`;
+
+exports[`Testing <Text> component should support color changing by passing a color code as prop 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#000000",
+      "fontFamily": "Avenir",
+      "fontSize": 18.857142857142858,
+      "fontWeight": "400",
+    }
+  }
+>
+  Test
+</Text>
+`;
+
+exports[`Testing <Text> component should support color changing by passing a color code as prop 2`] = `
+<Text
+  style={
+    Object {
+      "color": "#FFFFFF",
+      "fontFamily": "Avenir",
+      "fontSize": 18.857142857142858,
+      "fontWeight": "400",
+    }
+  }
+>
+  Test
+</Text>
+`;
+
+exports[`Testing <Text> component should support color changing by passing a color code as prop 3`] = `
+<Text
+  style={
+    Object {
+      "color": "#9B9898",
+      "fontFamily": "Avenir",
+      "fontSize": 18.857142857142858,
+      "fontWeight": "400",
+    }
+  }
+>
+  Test
+</Text>
+`;
+
+exports[`Testing <Text> component should support custom styles by receiving a style objects as a prop 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#000000",
+      "fontFamily": "Avenir",
+      "fontSize": 14,
+      "fontWeight": "400",
+    }
+  }
+>
+  Test
+</Text>
+`;

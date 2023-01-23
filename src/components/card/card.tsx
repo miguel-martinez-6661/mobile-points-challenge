@@ -5,7 +5,7 @@ import { styles as componentStyle } from './card-styles';
 
 interface CardProps {
   children: React.ReactNode;
-  styles?: ViewStyle;
+  styles?: ViewStyle | ViewStyle[];
   color?: string;
 }
 

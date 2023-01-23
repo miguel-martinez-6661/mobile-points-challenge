@@ -1,22 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Image, View } from 'react-native';
-import { RouteProp, useNavigation, useRoute } from '@react-navigation/native';
 
-import { styles } from './details-screen-styles';
+import { styles } from './product-details-screen-styles';
+import { useProductDetails } from './use-product-details';
+
 import { Button, Card, Text } from '../../components';
-import { AppNavigationParamList, Product } from '../../types';
 import { strings } from '../../constants/strings';
 import { Colors } from '../../constants/colors';
-import { formatDate } from '../../helpers';
+import { formatDate, formatNumber } from '../../helpers';
 
-export const DetailsScreen = () => {
-  const { goBack } = useNavigation();
-  const { params } = useRoute<RouteProp<AppNavigationParamList>>();
-  const [selectedProduct, setSelectedProduct] = useState<Product>();
-
-  useEffect(() => {
-    setSelectedProduct(params?.item);
-  }, [params]);
+export const ProductDetailsScreen = () => {
+  const { selectedProduct, goBack } = useProductDetails();
 
   return (
     <View style={styles.container}>
@@ -33,19 +27,21 @@ export const DetailsScreen = () => {
           />
         </Card>
 
-        <Text subTitle bold color={Colors.textTertiary}>
+        <Text subTitle bold color={Colors.textTertiary} styles={styles.section}>
           {`${strings.Details.productDetails}:`}
         </Text>
-        <Text title bold>
+        <Text title bold styles={styles.section}>
           {`${strings.Details.purchasedOn} ${formatDate(
             new Date(selectedProduct?.createdAt || new Date()),
           )}`}
         </Text>
-        <Text subTitle bold color={Colors.textTertiary}>
+        <Text subTitle bold color={Colors.textTertiary} styles={styles.section}>
           {`${strings.Details.purchasePointsEarned}:`}
         </Text>
-        <Text largeText bold>
-          {`${selectedProduct?.points} ${strings.Details.points}`}
+        <Text largeText bold styles={styles.section}>
+          {`${formatNumber(selectedProduct?.points || 0)} ${
+            strings.Details.points
+          }`}
         </Text>
         <Button title={strings.Details.acceptButton} onPress={goBack} />
       </View>

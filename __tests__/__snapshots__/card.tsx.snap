@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <Card> component should be able to change background color by receiving a color as a prop 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#334FFA",
+        "borderRadius": 20,
+        "elevation": 15,
+        "minWidth": 432.1428571428571,
+        "padding": 20,
+        "shadowColor": "#000000",
+        "shadowOffset": Object {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.5,
+        "shadowRadius": 4,
+      },
+      Object {
+        "backgroundColor": "#CFD6FF",
+      },
+      Object {},
+    ]
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#000000",
+        "fontFamily": "Avenir",
+        "fontSize": 18.857142857142858,
+        "fontWeight": "400",
+      }
+    }
+  >
+    Test
+  </Text>
+</View>
+`;
+
+exports[`Testing <Card> component should mount component correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#334FFA",
+        "borderRadius": 20,
+        "elevation": 15,
+        "minWidth": 432.1428571428571,
+        "padding": 20,
+        "shadowColor": "#000000",
+        "shadowOffset": Object {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.5,
+        "shadowRadius": 4,
+      },
+      Object {
+        "backgroundColor": "#334FFA",
+      },
+      Object {},
+    ]
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#000000",
+        "fontFamily": "Avenir",
+        "fontSize": 18.857142857142858,
+        "fontWeight": "400",
+      }
+    }
+  >
+    Test
+  </Text>
+</View>
+`;
+
+exports[`Testing <Card> component should support custom styles by receiving a style objects as a prop 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#334FFA",
+        "borderRadius": 20,
+        "elevation": 15,
+        "minWidth": 432.1428571428571,
+        "padding": 20,
+        "shadowColor": "#000000",
+        "shadowOffset": Object {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.5,
+        "shadowRadius": 4,
+      },
+      Object {
+        "backgroundColor": "#334FFA",
+      },
+      Object {
+        "width": 50,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#000000",
+        "fontFamily": "Avenir",
+        "fontSize": 18.857142857142858,
+        "fontWeight": "400",
+      }
+    }
+  >
+    Test
+  </Text>
+</View>
+`;

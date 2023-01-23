@@ -12,11 +12,11 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		5F177278AED14AEB88F19135 /* Avenir-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C2DAA33F762A42F193016934 /* Avenir-Light.otf */; };
+		73CCDDD128BA4DA8BF03AF14 /* Avenir-Normal.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7B3949A01C2A43E6B558AA4B /* Avenir-Normal.otf */; };
 		7699B88040F8A987B510C191 /* libPods-MobilePointingChanllenge-MobilePointingChanllengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-MobilePointingChanllenge-MobilePointingChanllengeTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8F3CCF32FD9249D482C982E0 /* Avenir-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BB4676C1F6C3448DAF1D417D /* Avenir-Bold.otf */; };
-		5F177278AED14AEB88F19135 /* Avenir-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C2DAA33F762A42F193016934 /* Avenir-Light.otf */; };
-		73CCDDD128BA4DA8BF03AF14 /* Avenir-Normal.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7B3949A01C2A43E6B558AA4B /* Avenir-Normal.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,12 +44,12 @@
 		5709B34CF0A7D63546082F79 /* Pods-MobilePointingChanllenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobilePointingChanllenge.release.xcconfig"; path = "Target Support Files/Pods-MobilePointingChanllenge/Pods-MobilePointingChanllenge.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-MobilePointingChanllenge-MobilePointingChanllengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobilePointingChanllenge-MobilePointingChanllengeTests.debug.xcconfig"; path = "Target Support Files/Pods-MobilePointingChanllenge-MobilePointingChanllengeTests/Pods-MobilePointingChanllenge-MobilePointingChanllengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-MobilePointingChanllenge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobilePointingChanllenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B3949A01C2A43E6B558AA4B /* Avenir-Normal.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Avenir-Normal.otf"; path = "../assets/fonts/Avenir-Normal.otf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = MobilePointingChanllenge/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-MobilePointingChanllenge-MobilePointingChanllengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobilePointingChanllenge-MobilePointingChanllengeTests.release.xcconfig"; path = "Target Support Files/Pods-MobilePointingChanllenge-MobilePointingChanllengeTests/Pods-MobilePointingChanllenge-MobilePointingChanllengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		BB4676C1F6C3448DAF1D417D /* Avenir-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Avenir-Bold.otf"; path = "../assets/fonts/Avenir-Bold.otf"; sourceTree = "<group>"; };
+		C2DAA33F762A42F193016934 /* Avenir-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Avenir-Light.otf"; path = "../assets/fonts/Avenir-Light.otf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		BB4676C1F6C3448DAF1D417D /* Avenir-Bold.otf */ = {isa = PBXFileReference; name = "Avenir-Bold.otf"; path = "../assets/fonts/Avenir-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C2DAA33F762A42F193016934 /* Avenir-Light.otf */ = {isa = PBXFileReference; name = "Avenir-Light.otf"; path = "../assets/fonts/Avenir-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7B3949A01C2A43E6B558AA4B /* Avenir-Normal.otf */ = {isa = PBXFileReference; name = "Avenir-Normal.otf"; path = "../assets/fonts/Avenir-Normal.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +112,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6E7E145AAE724AC8820FC09A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB4676C1F6C3448DAF1D417D /* Avenir-Bold.otf */,
+				C2DAA33F762A42F193016934 /* Avenir-Light.otf */,
+				7B3949A01C2A43E6B558AA4B /* Avenir-Normal.otf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,17 +165,6 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
-		};
-		6E7E145AAE724AC8820FC09A /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				BB4676C1F6C3448DAF1D417D /* Avenir-Bold.otf */,
-				C2DAA33F762A42F193016934 /* Avenir-Light.otf */,
-				7B3949A01C2A43E6B558AA4B /* Avenir-Normal.otf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 

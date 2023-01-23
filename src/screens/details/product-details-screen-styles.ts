@@ -19,10 +19,14 @@ export const styles = StyleSheet.create({
   },
   imageContainer: {
     padding: 0,
+    marginBottom: 30,
   },
   detailsImage: {
     height: verticalScale(250),
     width: '100%',
     borderRadius: 20,
+  },
+  section: {
+    marginBottom: 20,
   },
 });
