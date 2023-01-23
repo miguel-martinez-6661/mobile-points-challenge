@@ -41,15 +41,22 @@ export const useHome = () => {
     return total || 0;
   }, [products]);
 
+  const getFilterObject = useCallback(
+    () => ({
+      [FilterTypes.ALL]: products,
+      [FilterTypes.BY_EARNED_POINTS]: products?.filter(
+        product => !product.is_redemption,
+      ),
+      [FilterTypes.BY_REDEEMED_POINTS]: products?.filter(
+        product => product.is_redemption,
+      ),
+    }),
+    [products],
+  );
+
   const filterProducts = useCallback(() => {
-    if (currentFilter === FilterTypes.BY_EARNED_POINTS) {
-      return products?.filter(product => !product.is_redemption);
-    } else if (currentFilter === FilterTypes.BY_REDEEMED_POINTS) {
-      return products?.filter(product => product.is_redemption);
-    } else {
-      return products;
-    }
-  }, [currentFilter, products]);
+    return getFilterObject()[currentFilter];
+  }, [currentFilter, getFilterObject]);
 
   const handleFilterChange = useCallback((filter: FilterTypes) => {
     setCurrentFilter(filter);
