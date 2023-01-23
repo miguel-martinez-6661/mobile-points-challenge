@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 
 export function useFetch<T>(
-  callback: (params: any) => Promise<any>,
+  callback: (params?: any) => Promise<T>,
   params?: any,
 ) {
   const [data, setData] = useState<T>();
