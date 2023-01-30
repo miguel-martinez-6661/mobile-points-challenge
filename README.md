@@ -1,8 +1,8 @@
 # mobile-points-challenge
-Simple app that get data from an endpoint and display it.
+Simple application that gets data from an endpoint and displays it.
 
 ## Screenshots
-1. Platform Examples
+1. Platform Examples (were taken from devices with different resolutions).
 
 <table>
 <tr>
